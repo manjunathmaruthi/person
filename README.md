@@ -14,4 +14,34 @@
 7) try to access the Restfull APIs
 
 # RESTFULL APIs
-1) Add
+1) Add Person
+HTTP Verb: POST
+URL:http://localhost:8080/persons
+Body:{
+   
+   "firstName":"John",
+   "lastName":"Paul"
+}
+Hearder: 
+key: Content-Type
+value: application/json
+
+2) Edit Person
+HTTP Verb: PUT
+URL:http://localhost:8080/persons/{personId}
+Body:{"id":1,"firstName":"John","lastName":"Reid"}
+Hearder: 
+key: Content-Type
+value: application/json
+
+3) Delete Person
+HTTP Verb: DELETE
+URL:http://localhost:8080/persons/{personId}
+
+4) Get Number of persons
+HTTP Verb: GET
+URL: http://localhost:8080/persons/count
+
+5)  Get All persons
+HTTP Verb: GET
+URL: http://localhost:8080/persons/
