@@ -44,3 +44,20 @@ URL: http://localhost:8080/persons/count
 5)  Get All persons  
 HTTP Verb: GET  
 URL: http://localhost:8080/persons/  
+
+6) Add address to person  
+HTTP Verb: POST
+URL: http://localhost:8080/address?personId:1
+Header:
+key: Content-Type  
+value: application/json  
+Body:
+[{
+   "street":"test",
+   "city":"test",
+   "state":"state",
+   "postalCode":"postalCode"
+}
+]
+
+
